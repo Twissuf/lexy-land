@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kuis Huruf</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page page-quiz">
+    <header class="top">
+        <img src="assets/logo.png" alt="Logo" class="logo small" />
+    </header>
+
+    <main class="quiz-area">
+        <h2 class="quiz-title">Pilih kata yang sesuai dengan gambar!</h2>
+
+        <div class="quiz-card">
+            <img id="quizImage" alt="Gambar kuis" class="quiz-img" />
+            <div class="options" id="quizOptions"></div>
+        </div>
+
+        <div class="controls">
+            <a href="index.html" class="btn home">← Home</a>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+        startQuiz();
+    </script>
+</body>
+
+</html>

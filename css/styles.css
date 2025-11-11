@@ -1,0 +1,209 @@
+:root {
+    --bg: #FFF8E7;
+    --card: #FFFFFF;
+    --accent: #FF8A65;
+    --accent2: #FFD54F;
+    --muted: #6b6b6b;
+    --radius: 16px;
+    --shadow: 0 8px 20px rgba(20, 20, 60, 0.08);
+    font-family: 'Baloo 2', system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, var(--bg), #fff);
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==== HEADER ==== */
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 16px 16px;
+}
+
+.logo {
+    width: 35vw;
+    max-width: 180px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    background: linear-gradient(135deg, var(--accent2), #fff);
+    padding: 12px;
+}
+
+.logo.small {
+    width: 25vw;
+    max-width: 100px;
+}
+
+.desc {
+    margin: 12px 0 0;
+    font-weight: 700;
+    color: var(--muted);
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+/* ==== GRID TOMBOL ==== */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+    gap: 14px;
+    width: min(720px, 95%);
+    padding: 24px;
+}
+
+.kid-btn {
+    background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.6));
+    border-radius: 12px;
+    padding: 18px 8px;
+    text-align: center;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    transition: transform 0.15s ease, box-shadow 0.15s;
+    user-select: none;
+}
+
+.kid-btn:hover {
+    transform: scale(1.05);
+}
+
+
+.kid-btn:active {
+    transform: translateY(4px) scale(0.98);
+}
+
+/* Warna beda tiap urutan tombol */
+.button-grid .kid-btn:nth-child(3n+1) {
+    background: linear-gradient(135deg, #FFECB3, #FFF);
+}
+
+.button-grid .kid-btn:nth-child(3n+2) {
+    background: linear-gradient(135deg, #C8E6C9, #FFF);
+}
+
+.button-grid .kid-btn:nth-child(3n+3) {
+    background: linear-gradient(135deg, #BBDEFB, #FFF);
+}
+
+.button-grid .kid-btn span.small {
+    display: block;
+    font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+    color: var(--muted);
+}
+
+/* ==== VIDEO AREA ==== */
+.video-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    width: 100%;
+}
+
+.video-card {
+    background: var(--card);
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: pop 0.4s ease;
+}
+
+.video-card video {
+    aspect-ratio: 16/9;
+}
+
+
+@keyframes pop {
+    from {
+        transform: translateY(12px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+video {
+    width: 100%;
+    max-height: 60vh;
+    border-radius: 12px;
+    background: #000;
+    object-fit: contain;
+}
+
+.big-letter {
+    font-size: clamp(4rem, 12vw, 8rem);
+    margin: 10px 0 0;
+    color: var(--accent);
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* ==== HOME BUTTON ==== */
+.controls {
+    margin-top: 8px;
+}
+
+.btn.home {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: var(--shadow);
+}
+
+/* ==== FOOTER ==== */
+.footer {
+    margin-top: auto;
+    padding: 16px;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (min-width: 450px) {
+    .button-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .button-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .button-grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
