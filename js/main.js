@@ -75,7 +75,7 @@ function startQuiz() {
         n: { img: "Nyamuk.png", answer: "Nyamuk", options: ["Nyamuk", "Nyanyi", "Nitip", "Ngantuk"] },
         o: { img: "Ombak.png", answer: "Ombak", options: ["Ombak", "Oppa", "Otot", "Onta"] },
         p: { img: "Panda.png", answer: "Panda", options: ["Panda", "Pantai", "Parmo", "Pasir"] },
-        q: { img: "Queen.jpg", answer: "Queen", options: ["Queen", "Galak", "Gor", "Gofur"] },
+        q: { img: "Queen.jpg", answer: "Queen", options: ["Queen", "King", "Jester", "Queue"] },
         r: { img: "Rumah.jpg", answer: "Rumah", options: ["Rumah", "Retno", "Rawan", "Ramah"] },
         s: { img: "Sepatu.jpg", answer: "Sepatu", options: ["Sepatu", "Sakti", "Sapi", "Sri"] },
         t: { img: "Tengkorak.jpg", answer: "Tengkorak", options: ["Tengkorak", "Tangkisan", "Tongkol", "Taring"] },
@@ -305,28 +305,28 @@ function startFillQuiz() {
         },
         q: {
             sound: "assets/sounds/q.mp3",
-            template: "huruf __ itu __",
+            template: "Data Tidak Ada",
             answers: ["q", "q"]
         },
         r: {
             sound: "assets/sounds/r.mp3",
-            template: "__ __ __ __ __ petik __ __ __ __ __",
-            answers: ["fajar", "bunga"]
+            template: "__ __ __ __ __ itu __ __ __ __ __ __",
+            answers: ["rumah", "runtuh"]
         },
         s: {
             sound: "assets/sounds/s.mp3",
-            template: "__ __ __ __ gajah __ __ __ __ __",
-            answers: ["gigi", "besar"]
+            template: "__ __ __ __ sapi __ __ __ __",
+            answers: ["susu", "enak"]
         },
         t: {
             sound: "assets/sounds/t.mp3",
-            template: "__ __ __ __ hitung __ __ __ __",
-            answers: ["hana", "hitung"]
+            template: "__ __ __ __ tidak __ __ __ __",
+            answers: ["toti", "tahu"]
         },
         u: {
             sound: "assets/sounds/u.mp3",
-            template: "__ __ __  __ __ berenang di __ __ __ __",
-            answers: ["ikan", "laut"]
+            template: "__ __ __ __ __ __ dan __ __ __ __ __ __",
+            answers: ["untung", "hutang"]
         },
         v: {
             sound: "assets/sounds/v.mp3",
@@ -412,3 +412,4 @@ function startFillQuiz() {
         }
     };
 }
+
