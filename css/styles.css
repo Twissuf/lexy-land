@@ -21,7 +21,7 @@ body {
     background-position: center;
     background-size: cover;
     background-color: var(--bg);
-    color: #222;
+    color: #000;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -377,3 +377,4 @@ video {
         grid-template-columns: repeat(6, 1fr);
     }
 }
+
