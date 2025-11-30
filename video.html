@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Belajar Huruf</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page page-video">
+    <header class="top">
+        <img src="assets/logo.png" alt="Logo" class="logo small" />
+    </header>
+
+    <main class="video-area">
+        <video id="videoPlayer" controls class="video-box"></video>
+        <h1 id="letterDisplay" class="big-letter"></h1>
+
+        <div class="controls">
+            <a href="index.html" class="btn home">← Home</a>
+            <button id="quizBtn" class="btn quiz">🎮 Kuis</button>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+        loadVideoPage();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lexy Land - Quiz</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="page page-quiz2">
+    <header class="top">
+        <img src="assets/logo.png" class="logo small" />
+    </header>
+
+    <main class="quiz-area">
+        <h2>Dengarkan suaranya lalu isi bagian yang kosong!</h2>
+
+        <button id="playSoundBtn" class="btnmic">🔊 Putar Suara</button>
+
+        <p id="sentenceTemplate" class="sentence-template"></p>
+
+        <div id="inputs" class="input-area"></div>
+
+        <button id="checkBtn" class="btn quiz">✔️ Cek Jawaban</button>
+
+        <p id="feedback" class="result"></p>
+
+        <a href="index.html" class="btn home">← Home</a>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script> startFillQuiz(); </script>
+</body>
+
+</html>
