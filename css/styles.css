@@ -1,5 +1,5 @@
 :root {
-    --bg: #FFF8E7;
+    --bg: #FFEFC4;
     --card: #FFFFFF;
     --accent: #FF8A65;
     --accent2: #FFD54F;
@@ -7,6 +7,7 @@
     --radius: 16px;
     --shadow: 0 8px 20px rgba(20, 20, 60, 0.08);
     font-family: 'Baloo 2', system-ui, sans-serif;
+    --test: #00ff0080;
 }
 
 * {
@@ -16,7 +17,10 @@
 
 body {
     margin: 0;
-    background: linear-gradient(180deg, var(--bg), #fff);
+    background-image: url(../assets/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: var(--bg);
     color: #222;
     min-height: 100vh;
     display: flex;
@@ -33,19 +37,25 @@ body {
 }
 
 .logo {
-    width: 35vw;
-    max-width: 180px;
+    width: 140vw;
+    max-width: 360px;
     height: auto;
     object-fit: contain;
-    border-radius: 24px;
+    /* border-radius: 24px;
     box-shadow: var(--shadow);
-    background: linear-gradient(135deg, var(--accent2), #fff);
+    background: linear-gradient(135deg, var(--accent2), #fff); */
     padding: 12px;
+    margin: -45px 0;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9));
 }
 
 .logo.small {
-    width: 25vw;
-    max-width: 100px;
+    width: 75vw;
+    max-width: 250px;
+}
+
+.mascot {
+    filter: drop-shadow(0 0 10px rgba(255, 100, 100, 0.5));
 }
 
 .desc {
@@ -54,6 +64,14 @@ body {
     color: var(--muted);
     text-align: center;
     font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+.main-area {
+    display: flex;
+}
+
+.main-area img {
+    width: 100%;
 }
 
 /* ==== GRID TOMBOL ==== */
@@ -68,15 +86,19 @@ body {
 .kid-btn {
     background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.6));
     border-radius: 12px;
+    width: 80px;
+    height: 80px;
     padding: 18px 8px;
     text-align: center;
     font-size: clamp(1.1rem, 2vw, 1.5rem);
     font-weight: 700;
     cursor: pointer;
     box-shadow: var(--shadow);
-    border: 4px solid rgba(255, 255, 255, 0.6);
+    border: 0px solid rgba(255, 255, 255, 0.6);
     transition: transform 0.15s ease, box-shadow 0.15s;
     user-select: none;
+    color: #FF006B;
+    background: linear-gradient(135deg, #FF914D, #FFF);
 }
 
 .kid-btn:hover {
@@ -89,17 +111,17 @@ body {
 }
 
 /* Warna beda tiap urutan tombol */
-.button-grid .kid-btn:nth-child(3n+1) {
-    background: linear-gradient(135deg, #FFECB3, #FFF);
-}
+/* .button-grid .kid-btn:nth-child(3n+1) {
+        background: linear-gradient(135deg, #FFECB3, #FFF);
+    }
 
-.button-grid .kid-btn:nth-child(3n+2) {
-    background: linear-gradient(135deg, #C8E6C9, #FFF);
-}
+    .button-grid .kid-btn:nth-child(3n+2) {
+        background: linear-gradient(135deg, #C8E6C9, #FFF);
+    }
 
-.button-grid .kid-btn:nth-child(3n+3) {
-    background: linear-gradient(135deg, #BBDEFB, #FFF);
-}
+    .button-grid .kid-btn:nth-child(3n+3) {
+        background: linear-gradient(135deg, #BBDEFB, #FFF);
+    } */
 
 .button-grid .kid-btn span.small {
     display: block;
@@ -156,12 +178,14 @@ video {
 }
 
 .big-letter {
-    font-size: clamp(4rem, 12vw, 8rem);
+    /* font-size: clamp(4rem, 12vw, 8rem); */
+    font-size: 12vw;
     margin: 10px 0 0;
     color: var(--accent);
     font-weight: 800;
     letter-spacing: 6px;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.06);
+    filter: drop-shadow(0 0 10px rgba(255, 100, 100, 0.5));
 }
 
 /* ==== HOME BUTTON ==== */
@@ -178,7 +202,38 @@ video {
     text-decoration: none;
     font-weight: 700;
     box-shadow: var(--shadow);
+    transition: transform .2s, background .2s;
 }
+
+.btn.home:hover {
+    transform: scale(1.05);
+}
+
+.btn.quiz,
+.btn.mic,
+.btnmic {
+    background: #FFD54F;
+    color: #333;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform .2s, background .2s;
+    cursor: pointer;
+    border-width: 0;
+}
+
+.btn.quiz:hover,
+.btn.mic:hover,
+.btnmic:hover {
+    background: #FFCA28;
+    transform: scale(1.05);
+}
+
+.btn.mic {
+    display: none;
+}
+
 
 /* ==== FOOTER ==== */
 .footer {
@@ -189,21 +244,136 @@ video {
     text-align: center;
 }
 
+/* ==== QUIZ ==== */
+.quiz-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.quiz-title {
+    text-align: center;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    color: var(--accent);
+    margin: 0;
+}
+
+.quiz-card {
+    background: var(--card);
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(500px, 90%);
+}
+
+.quiz-img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 16px;
+    object-fit: contain;
+    background: #fff;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.quiz-btn {
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background: var(--accent2);
+    box-shadow: var(--shadow);
+    transition: all 0.2s;
+}
+
+.quiz-btn:active {
+    transform: scale(0.95);
+}
+
+.quiz-btn.correct {
+    background: #81C784;
+    color: #fff;
+}
+
+.quiz-btn.wrong {
+    background: #E57373;
+    color: #fff;
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn.option {
+    background: #FFF9C4;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.btn.option:hover {
+    background: #FFF59D;
+    transform: scale(1.05);
+}
+
+.sentence-template {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.input-area {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fill-input {
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+
+
 /* ==== RESPONSIVE ==== */
 @media (min-width: 450px) {
     .button-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 768px) {
     .button-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
     .button-grid {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
 }
