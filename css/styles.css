@@ -61,7 +61,7 @@ body {
 .desc {
     margin: 12px 0 0;
     font-weight: 700;
-    color: var(--muted);
+    color: black;
     text-align: center;
     font-size: clamp(1rem, 2vw, 1.4rem);
 }
@@ -377,4 +377,5 @@ video {
         grid-template-columns: repeat(6, 1fr);
     }
 }
+
 
