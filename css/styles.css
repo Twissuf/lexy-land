@@ -86,8 +86,8 @@ body {
 .kid-btn {
     background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.6));
     border-radius: 12px;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     padding: 18px 8px;
     text-align: center;
     font-size: clamp(1.1rem, 2vw, 1.5rem);
@@ -366,17 +366,26 @@ video {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
+    .button-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
     .button-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 700px) {
+    .button-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
     .button-grid {
         grid-template-columns: repeat(6, 1fr);
     }
 }
-
-
-
