@@ -179,7 +179,7 @@ video {
 
 .big-letter {
     /* font-size: clamp(4rem, 12vw, 8rem); */
-    font-size: 12vw;
+    font-size: 24vw;
     margin: 10px 0 0;
     color: var(--accent);
     font-weight: 800;
@@ -377,5 +377,6 @@ video {
         grid-template-columns: repeat(6, 1fr);
     }
 }
+
 
 
