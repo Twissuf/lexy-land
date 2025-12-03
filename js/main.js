@@ -59,32 +59,32 @@ function startQuiz() {
     letter = letter.toLowerCase();
 
     const quizData = {
-        a: { img: "Ayam.png", answer: "Ayam", options: ["Ayam", "Maya", "Yam", "Sayam"] },
-        b: { img: "Bebek.png", answer: "Bebek", options: ["Bebek", "Bola", "Boleh", "Beli"] },
-        c: { img: "Cikak.png", answer: "Cicak", options: ["Cicak", "Cucu", "Coklat", "Cita"] },
-        d: { img: "Dadu.png", answer: "Dadu", options: ["Dada", "Dudu", "Dadu", "Doni"] },
-        e: { img: "Elang.png", answer: "Elang", options: ["Elang", "Endang", "Ekor", "Emas"] },
-        f: { img: "Film.png", answer: "Film", options: ["Film", "Firkoh", "Fitroh", "Foli"] },
-        g: { img: "Gajah.png", answer: "Gajah", options: ["Gajah", "Galak", "Gor", "Gofur"] },
-        h: { img: "Hiu.png", answer: "Hiu", options: ["Hiu", "Hati", "Hilman", "Hitam"] },
-        i: { img: "Ikan.png", answer: "Ikan", options: ["Ikan", "Ilham", "Ilang", "Itik"] },
-        j: { img: "Jagung.png", answer: "Jagung", options: ["Jagung", "Jerman", "Jakun", "Jarang"] },
-        k: { img: "Kakek.png", answer: "Kakek", options: ["Kakek", "Kaku", "Kaki", "Kuku"] },
-        l: { img: "Lampu.png", answer: "Lampu", options: ["Lampu", "Lampau", "Lumpia", "Lampung"] },
-        m: { img: "Membaca.png", answer: "Membaca", options: ["Membaca", "Memakan", "Mandi", "Merangkak"] },
-        n: { img: "Nyamuk.png", answer: "Nyamuk", options: ["Nyamuk", "Nyanyi", "Nitip", "Ngantuk"] },
-        o: { img: "Ombak.png", answer: "Ombak", options: ["Ombak", "Oppa", "Otot", "Onta"] },
-        p: { img: "Panda.png", answer: "Panda", options: ["Panda", "Pantai", "Parmo", "Pasir"] },
+        a: { img: "Ayam.png", answer: "Ayam", options: ["Ayam", "Maya", "Yama", "Ayma"] },
+        b: { img: "Bebek.png", answer: "Bebek", options: ["Bebek", "Bekeb", "Bekbe", "Ebebk"] },
+        c: { img: "Cikak.png", answer: "Cicak", options: ["Cicak", "Cacik", "Kicak", "Kacik"] },
+        d: { img: "Dadu.png", answer: "Dadu", options: ["Dada", "Dudu", "Dadu", "Didoi"] },
+        e: { img: "Elang.png", answer: "Elang", options: ["Elang", "Endang", "Selang", "Ilang"] },
+        f: { img: "Film.png", answer: "Film", options: ["Film", "Flum", "Fill", "Fiml"] },
+        g: { img: "Gajah.png", answer: "Gajah", options: ["Gajah", "Galak", "Jagah", "Gahja"] },
+        h: { img: "Hiu.png", answer: "Hiu", options: ["Iuh", "Hui", "Hai", "Hiu"] },
+        i: { img: "Ikan.png", answer: "Ikan", options: ["Ikan", "Inak", "Kani", "Knia"] },
+        j: { img: "Jagung.png", answer: "Jagung", options: ["Jagung", "Gajung", "Jaggun", "Gagung"] },
+        k: { img: "Kakek.png", answer: "Kakek", options: ["Kakek", "Kekek", "Kakik", "Kukuk"] },
+        l: { img: "Lampu.png", answer: "Lampu", options: ["Lampu", "Lampau", "Lumpia", "Lumpa"] },
+        m: { img: "Membaca.png", answer: "Membaca", options: ["Membaca", "Memcaba", "Menbacai", "Mambace"] },
+        n: { img: "Nyamuk.png", answer: "Nyamuk", options: ["Nyamuk", "Nyamik", "Nyamak", "Nyimak"] },
+        o: { img: "Ombak.png", answer: "Ombak", options: ["Ombak", "Obamk", "Okbam", "Okmab"] },
+        p: { img: "Panda.png", answer: "Panda", options: ["Panda", "Pandai", "Padna", "Padan"] },
         q: { img: "Queen.jpg", answer: "Queen", options: ["Queen", "King", "Jester", "Queue"] },
-        r: { img: "Rumah.jpg", answer: "Rumah", options: ["Rumah", "Retno", "Rawan", "Ramah"] },
-        s: { img: "Sepatu.jpg", answer: "Sepatu", options: ["Sepatu", "Sakti", "Sapi", "Sri"] },
-        t: { img: "Tengkorak.jpg", answer: "Tengkorak", options: ["Tengkorak", "Tangkisan", "Tongkol", "Taring"] },
-        u: { img: "Uang.jpg", answer: "Uang", options: ["Uang", "Utang", "Ulfah", "Ustad"] },
-        v: { img: "Ventilasi.jpg", answer: "Ventilasi", options: ["Ventilasi", "Vivi", "Vaksin", "Veteran"] },
-        w: { img: "Wastafel.png", answer: "Wastafel", options: ["Wastafel", "Wakil", "Willy", "Watak"] },
-        x: { img: "X-ray.png", answer: "Xray", options: ["Xray", "Xiomi", "Xylophone", "Xerox"] },
-        y: { img: "Yoyo.png", answer: "Yoyo", options: ["Yoyo", "Yulianto", "Yang", "Yin"] },
-        z: { img: "Zebra.jpg", answer: "Zebra", options: ["Zebra", "Zikir", "Zaky", "Zedaa"] },
+        r: { img: "Rumah.jpg", answer: "Rumah", options: ["Rumah", "Ramah", "Marah", "Ramuh"] },
+        s: { img: "Sepatu.jpg", answer: "Sepatu", options: ["Sepatu", "Sapatui", "Sepitui", "Supatu"] },
+        t: { img: "Tengkorak.jpg", answer: "Tengkorak", options: ["Tengkorak", "Tongkorok", "Tangkirak", "Tengkarak"] },
+        u: { img: "Uang.jpg", answer: "Uang", options: ["Uang", "Utang", "Usang", "Aung"] },
+        v: { img: "Ventilasi.jpg", answer: "Ventilasi", options: ["Ventilasi", "Vintilasi", "Vantilasi", "Vuntilasi"] },
+        w: { img: "Wastafel.png", answer: "Wastafel", options: ["Wastafel", "Wustafal", "Wiistafil", "Wastafal"] },
+        x: { img: "X-ray.png", answer: "Xray", options: ["Xray", "Xyar", "Xyra", "Yrax"] },
+        y: { img: "Yoyo.png", answer: "Yoyo", options: ["Yoyo", "Oyoy", "Yiyi", "Yeyo"] },
+        z: { img: "Zebra.jpg", answer: "Zebra", options: ["Zebra", "Zabra", "Zubra", "Zibra"] },
     };
 
     const data = quizData[letter] || quizData['a'];
@@ -412,4 +412,5 @@ function startFillQuiz() {
         }
     };
 }
+
 
