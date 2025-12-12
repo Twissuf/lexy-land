@@ -61,7 +61,7 @@ function startQuiz() {
     const quizData = {
         a: { img: "Ayam.png", answer: "Ayam", options: ["Ayam", "Maya", "Yama", "Ayma"] },
         b: { img: "Bebek.png", answer: "Bebek", options: ["Bebek", "Bekeb", "Bekbe", "Ebebk"] },
-        c: { img: "Cikak.png", answer: "Cicak", options: ["Cicak", "Cacik", "Kicak", "Kacik"] },
+        c: { img: "Cicak.png", answer: "Cicak", options: ["Cicak", "Cacik", "Kicak", "Kacik"] },
         d: { img: "Dadu.png", answer: "Dadu", options: ["Dada", "Dudu", "Dadu", "Didoi"] },
         e: { img: "Elang.png", answer: "Elang", options: ["Elang", "Endang", "Selang", "Ilang"] },
         f: { img: "Film.png", answer: "Film", options: ["Film", "Flum", "Fill", "Fiml"] },
@@ -412,5 +412,6 @@ function startFillQuiz() {
         }
     };
 }
+
 
 
