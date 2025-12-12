@@ -28,6 +28,11 @@ body {
     align-items: center;
 }
 
+small a {
+    color: var(--muted);
+    font-style: normal;
+}
+
 /* ==== HEADER ==== */
 .top {
     display: flex;
@@ -61,9 +66,10 @@ body {
 .desc {
     margin: 12px 0 0;
     font-weight: 700;
-    color: black;
+    color: var(--accent);
     text-align: center;
     font-size: clamp(1rem, 2vw, 1.4rem);
+    filter: drop-shadow(0 0 5px white);
 }
 
 .main-area {
@@ -125,7 +131,7 @@ body {
 
 .button-grid .kid-btn span.small {
     display: block;
-    font-size: clamp(0.7rem, 1.2vw, 0.9rem);
+    font-size: clamp(0.7rem, 0.8rem, 0.9rem);
     color: var(--muted);
 }
 
